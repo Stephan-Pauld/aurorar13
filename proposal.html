@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Computer Repair Proposal – Alienware Aurora R13</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #222;
+      line-height: 1.5;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px;
+      background: #f7f7f7;
+    }
+    h1, h2, h3 {
+      margin-bottom: 0.3em;
+    }
+    h1 {
+      font-size: 1.6rem;
+      border-bottom: 2px solid #333;
+      padding-bottom: 0.3em;
+    }
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 1.2em;
+    }
+    h3 {
+      font-size: 1.1rem;
+      margin-top: 1em;
+    }
+    p {
+      margin: 0.4em 0;
+    }
+    .muted {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .section {
+      background: #fff;
+      border-radius: 6px;
+      padding: 16px 18px;
+      margin-top: 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    .highlight {
+      background: #fffbf0;
+      border-left: 4px solid #ff9800;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 4px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 6px 8px;
+      text-align: left;
+    }
+    th {
+      background: #f0f0f0;
+    }
+    .right {
+      text-align: right;
+    }
+    .total-row th, .total-row td {
+      border-top: 2px solid #333;
+      font-weight: 600;
+    }
+    .small {
+      font-size: 0.85rem;
+    }
+    ul {
+      margin: 0.4em 0;
+      padding-left: 20px;
+    }
+    li {
+      margin: 0.3em 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Repair Proposal – Alienware Aurora R13</h1>
+
+  <div class="section">
+    <p><strong>Client:</strong> [Client Name]</p>
+    <p><strong>System:</strong> Alienware Aurora R13 – Service Tag: 8BCZ2L3</p>
+    <p><strong>Date:</strong> [Date]</p>
+  </div>
+
+  <div class="section">
+    <h2>1. Work Performed – Diagnostic</h2>
+    <p><strong>Diagnostic Fee:</strong> $49.00 (applied toward repair if approved)</p>
+    <h3>Findings</h3>
+    <ul>
+      <li>System arrived with symptom: powers on, lights and fans active, but no video output.</li>
+      <li>Tested with client's original RTX 3090 and a known-good GeForce RTX 2060 Super – no video in either case.</li>
+      <li>Tested system with all storage removed (M.2 NVMe and 2.5&quot; SSD). System successfully POSTs, displays video, and enters Alienware SupportAssist / BIOS setup.</li>
+      <li>Reinstalling the original M.2 NVMe drive immediately causes a no‑POST, no‑video condition again, even with a known-good GPU installed.</li>
+      <li>CMOS/RTC reset performed; with storage removed the system is stable and repeatedly POSTs, confirming motherboard, CPU, RAM, PSU, and GPU are functional.</li>
+    </ul>
+    <p><strong>Diagnostic Conclusion:</strong> The primary fault is a <strong>failed M.2 NVMe SSD</strong> (system drive). When installed, this drive prevents the system from completing POST, which is why no video output was present.</p>
+  </div>
+
+  <div class="section">
+    <h2>2. Recommended Repair – Restore Functionality</h2>
+    <p>The following work is recommended to return the system to normal operation:</p>
+    <ul>
+      <li>Supply and install a new M.2 NVMe SSD (system drive).</li>
+      <li>Install Microsoft Windows 11 and perform basic system configuration.</li>
+      <li>Verify stable boot to Windows and confirm GPU output is working as expected.</li>
+    </ul>
+
+    <h3>Estimated Costs – Functional Repair</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th class="right">Qty</th>
+          <th class="right">Rate</th>
+          <th class="right">Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Diagnostic fee (applied toward repair)</td>
+          <td class="right">1</td>
+          <td class="right">$49.00</td>
+          <td class="right">$49.00</td>
+        </tr>
+        <tr>
+          <td>New 1TB NVMe SSD (estimated parts cost)</td>
+          <td class="right">1</td>
+          <td class="right">$100.00</td>
+          <td class="right">$100.00</td>
+        </tr>
+        <tr>
+          <td>Labour – drive install, OS install, testing<br><span class="small">(estimated 2.0 hours @ $100/hr)</span></td>
+          <td class="right">2.0</td>
+          <td class="right">$100.00</td>
+          <td class="right">$200.00</td>
+        </tr>
+        <tr class="total-row">
+          <td colspan="3" class="right">Estimated Subtotal (before tax)</td>
+          <td class="right">$349.00</td>
+        </tr>
+        <tr>
+          <td colspan="3" class="right">Less diagnostic fee applied to repair</td>
+          <td class="right">–$49.00</td>
+        </tr>
+        <tr class="total-row">
+          <td colspan="3" class="right">Estimated Total – Core Repair (before tax)</td>
+          <td class="right">$300.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="muted">Note: Parts pricing may vary slightly depending on availability at the time of approval. Any material change in cost will be confirmed with you before proceeding.</p>
+  </div>
+
+  <div class="section">
+    <h2>3. Optional Add-On – System Optimization & Maintenance</h2>
+    <p>Your Alienware Aurora R13 system is several years old. While the core repair will make the system bootable, we recommend a <strong>System Optimization & Maintenance package</strong> to ensure peak performance and stability:</p>
+
+    <div class="highlight">
+      <strong>What's included:</strong>
+      <ul>
+        <li>BIOS firmware update to latest stable version (improves stability and security)</li>
+        <li>NVIDIA GPU drivers – latest certified drivers for RTX 3090</li>
+        <li>Chipset, audio, and system drivers from Dell (Alienware service tag auto-detection)</li>
+        <li>Windows updates and security patches</li>
+        <li>System diagnostics and stress testing to confirm stability under load</li>
+      </ul>
+    </div>
+
+    <h3>Optional Add-On Cost</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th class="right">Qty</th>
+          <th class="right">Rate</th>
+          <th class="right">Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>System Optimization & Maintenance<br><span class="small">(estimated 1.5–2.0 hours @ $100/hr)</span></td>
+          <td class="right">1.75</td>
+          <td class="right">$100.00</td>
+          <td class="right">$175.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="muted">This add-on is optional and can be approved or declined independently. If approved, it will be performed after the core repair is complete.</p>
+  </div>
+
+  <div class="section">
+    <h2>4. Optional Service – Data Recovery Attempt</h2>
+    <p>Your original M.2 NVMe system drive is failing in a way that prevents the computer from even starting when it is installed. This indicates a probable controller or firmware‑level failure on the SSD.</p>
+    <p><strong>Important:</strong> In this failure mode, data recovery is not guaranteed. Basic software‑based recovery tools can only help if the drive can still be detected and accessed in some form by another system (for example, via an external NVMe enclosure). If the drive is electrically dead or not detected at all, recovery typically requires a specialized data recovery lab, which is a separate, higher‑cost service.</p>
+
+    <h3>Option A – In‑House Best‑Effort Recovery</h3>
+    <ul>
+      <li>Test the failed NVMe in an external enclosure on a separate system.</li>
+      <li>If detectable, attempt to copy user data (Documents, Desktop, Pictures, etc.) to an external drive using specialized recovery tools.</li>
+      <li>Billable as best‑effort labour only; success is not guaranteed.</li>
+    </ul>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th class="right">Qty</th>
+          <th class="right">Rate</th>
+          <th class="right">Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>In‑house data recovery attempt (best effort)</td>
+          <td class="right">1.0–2.0 hrs</td>
+          <td class="right">$100.00/hr</td>
+          <td class="right">$100.00–$200.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="muted">
+      If the drive is not detected at all in an external enclosure, or if the failure is clearly at the controller/firmware level, I can refer you to a dedicated data recovery lab. Typical lab recoveries for failed NVMe SSDs often start in the $600+ range and are quoted case‑by‑case by the recovery provider.
+    </p>
+  </div>
+
+  <div class="section">
+    <p class="muted">
+      Hourly rate for bench work: <strong>$100.00/hr</strong>. Diagnostic fee of $49.00 is applied toward the approved repair. All prices are in CAD and subject to applicable taxes.
+    </p>
+  </div>
+
+</body>
+</html>
